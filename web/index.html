@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Agent להכנת ספר ילדים</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="hero">
+      <p class="eyebrow">LangGraph + OpenAI</p>
+      <h1>AI Agent להכנת ספר ילדים בעברית</h1>
+      <p>מכניסים מלל לשער ולעמודים, כותבים הוראות בעברית, וה-Agent יוצר ספר ילדים מסודר.</p>
+    </section>
+
+    <section class="workspace">
+      <form class="card form-card" id="bookForm">
+        <label>
+          <span>מלל שער</span>
+          <textarea id="coverText" rows="3" placeholder="לדוגמה: ילדה חצי חתולה"></textarea>
+        </label>
+
+        <label>
+          <span>גיל יעד</span>
+          <input id="childAge" value="4-7" />
+        </label>
+
+        <label>
+          <span>הוראות בעברית ל-GPT</span>
+          <textarea id="styleInstructions" rows="3" placeholder="לדוגמה: תכתוב פשוט, עדין, מצחיק, עם משפטים קצרים"></textarea>
+        </label>
+
+        <div class="pages-header">
+          <h2>עמודים</h2>
+          <button type="button" id="addPageBtn">הוספת עמוד</button>
+        </div>
+
+        <div id="pagesList" class="pages-list"></div>
+
+        <button class="primary-btn" type="submit" id="submitBtn">יצירת ספר עם AI</button>
+        <p class="status" id="statusText"></p>
+      </form>
+
+      <section class="card preview-card">
+        <div class="preview-header">
+          <h2>תצוגה מקדימה</h2>
+          <a id="downloadLink" class="download-link is-hidden" href="#">הורדת ZIP ל-GitHub Pages</a>
+        </div>
+        <div id="preview" class="preview empty">הספר יופיע כאן אחרי יצירה.</div>
+      </section>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
