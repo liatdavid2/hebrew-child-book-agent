@@ -5,44 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ספרים שנוצרו</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      direction: rtl;
-      background: #f7efff;
-      padding: 40px;
-      color: #2b2140;
+    * {
+      box-sizing: border-box;
     }
 
-    .box {
-      max-width: 700px;
-      margin: auto;
-      background: white;
-      border-radius: 24px;
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, "Noto Sans Hebrew", sans-serif;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(255,255,255,0.95), transparent 28rem),
+        linear-gradient(135deg, #fae8ff, #dff7ff 60%, #fff4d8);
+      color: #2b2140;
+      padding: 32px;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.88);
+      border-radius: 28px;
       padding: 28px;
-      box-shadow: 0 18px 50px rgba(57, 28, 88, 0.14);
+      box-shadow: 0 24px 70px rgba(45, 30, 76, 0.16);
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      color: #55258a;
+    }
+
+    p {
+      margin: 0 0 24px;
+      color: #6b617a;
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+
+    .book-list {
+      display: grid;
+      gap: 14px;
     }
 
     a {
       display: block;
-      margin: 12px 0;
-      padding: 14px 18px;
-      border-radius: 16px;
-      background: #efe2ff;
+      padding: 18px 20px;
+      border-radius: 18px;
+      background: rgba(123, 67, 198, 0.12);
       color: #55258a;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 900;
+      font-size: 1.15rem;
+      transition: 0.2s;
     }
 
     a:hover {
-      background: #e1ccff;
+      background: rgba(123, 67, 198, 0.22);
+      transform: translateY(-2px);
+    }
+
+    .note {
+      margin-top: 22px;
+      font-size: 0.95rem;
+      color: #6b617a;
     }
   </style>
 </head>
 <body>
-  <div class="box">
+  <main class="container">
     <h1>ספרים שנוצרו</h1>
+    <p>בחרי ספר לפתיחה:</p>
 
-    <a href="./0f5d0730/">ספר 0f5d0730</a>
-  </div>
+    <section class="book-list">
+      <a href="./0f5d0730/"> 0f5d0730 ספר</a>
+      <a href="./61243641/">ספר 61243641</a>
+      <a href="./91729410/">ספר 91729410</a>
+    </section>
+
+    <div class="note">
+      כל קישור פותח ספר HTML שנוצר על ידי ה-Agent.
+    </div>
+  </main>
 </body>
 </html>
