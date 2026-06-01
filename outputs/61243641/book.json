@@ -1,0 +1,20 @@
+{
+  "title": "יְלָדָה חֲצִי קֶשֶׁת בַּעֲנָן",
+  "subtitle": "סִפּוּר עַל יְלָדָה מְיֻחֶדֶת וְחֲלֻמָּה",
+  "cover_text": "יְלָדָה חֲצִי קֶשֶׁת בַּעֲנָן",
+  "age_range": "4-7",
+  "style": "פָּשׁוּט, חֲמִים, וְדִמְיוֹנִי לִילָדִים",
+  "cover_image_prompt_hebrew": "יְלָדָה חֲצִי קֶשֶׁת בַּעֲנָן עוֹמֶדֶת בִּשְׁדֵה פֶּרַחִים, סְבִיבָהּ קֶשֶׁת בַּעֲנָן זָהוּרָה וְצִיוּרִים קְטַנִּים שֶׁל פֶּרַחִים וְשָׁמַיִם",
+  "cover_image_prompt_english": "Half rainbow girl standing in a flower field, surrounded by a bright rainbow and small drawings of flowers and sky",
+  "pages": [
+    {
+      "page_number": 1,
+      "original_text": "ילדה חצי ילדה חצי קשת בענן התחילה כיתה א.",
+      "final_text": "יְלָדָה חֲצִי וְחֲצִי קֶשֶׁת בַּעֲנָן הִתְחִילָה כִּתָּה א׳.",
+      "image_prompt_hebrew": "יְלָדָה חֲצִי קֶשֶׁת בַּעֲנָן בְּכִתָּה שֶׁל תַּלְמִידִים קְטַנִּים, כִּתָּה מְאוּרָה וְצִיּוּרִים עַל הַקִּיר",
+      "image_prompt_english": "Half rainbow girl in a classroom with small students, bright classroom with drawings on the wall",
+      "image": "assets/page-1.png"
+    }
+  ],
+  "cover_image": "assets/cover.png"
+}

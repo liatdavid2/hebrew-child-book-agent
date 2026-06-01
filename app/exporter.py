@@ -21,9 +21,6 @@ def build_book_site(book: Dict[str, Any], output_dir: Path) -> Path:
           <section class="cover-page">
             <img class="cover-image" src="{escape(book.get('cover_image', ''))}" alt="שער הספר" />
             <div class="cover-overlay">
-              <div class="badge">שער</div>
-              <h1>{escape(book.get('title', 'ספר ילדים'))}</h1>
-              <p class="subtitle">{escape(book.get('subtitle', ''))}</p>
               <div class="cover-text">{escape(book.get('cover_text', ''))}</div>
             </div>
           </section>
@@ -43,7 +40,6 @@ def build_book_site(book: Dict[str, Any], output_dir: Path) -> Path:
                   <img class="page-image" src="{escape(image)}" alt="איור לעמוד {escape(str(n))}" />
                 </div>
                 <div class="text-area">
-                  <div class="badge">עמוד {escape(str(n))}</div>
                   <p>{escape(text)}</p>
                 </div>
               </section>
@@ -86,9 +82,53 @@ button{font:inherit}.app{min-height:100svh;display:grid;place-items:center;paddi
 .page{position:absolute;inset:0;overflow:hidden;border-radius:30px;background:var(--paper);border:clamp(5px,1.2vw,10px) solid rgba(255,255,255,.96);box-shadow:inset 0 0 0 1px rgba(123,67,198,.14),0 18px 50px rgba(57,28,88,.17);opacity:0;transform:rotateY(-18deg) scale(.965);transform-origin:right center;pointer-events:none;transition:opacity .38s ease,transform .52s cubic-bezier(.18,.72,.2,1)}
 .page.is-active{opacity:1;transform:rotateY(0) scale(1);pointer-events:auto;z-index:2}.page.is-leaving-forward{opacity:0;transform:rotateY(18deg) scale(.965)}.page.is-leaving-back{opacity:0;transform:rotateY(-18deg) scale(.965)}
 .cover-page,.story-page{width:100%;height:100%;display:grid;align-content:center;padding:clamp(18px,4vw,30px)}
-.cover-page{position:relative;overflow:hidden}.cover-image,.page-image{width:100%;height:100%;object-fit:cover;border-radius:24px;display:block}.cover-overlay{position:absolute;inset:auto 24px 24px 24px;display:grid;gap:12px;padding:18px;background:rgba(255,255,255,.75);backdrop-filter:blur(10px);border-radius:24px;text-align:center}
-.badge{justify-self:center;padding:7px 16px;border-radius:999px;background:rgba(123,67,198,.13);color:#55258a;font-weight:900}.cover-overlay h1{margin:0;font-size:clamp(1.8rem,5vw,3.8rem);line-height:1.08}.subtitle{margin:0;color:var(--muted);font-size:clamp(1rem,2.3vw,1.35rem);line-height:1.45}.cover-text{font-size:clamp(1.05rem,2.5vw,1.55rem);line-height:1.55;font-weight:800}
-.story-page{grid-template-rows:minmax(0,1.2fr) auto;gap:14px}.image-wrap{display:grid}.text-area{display:grid;gap:12px;padding:18px;border-radius:24px;background:rgba(255,255,255,.82)}.text-area p{margin:0;text-align:center;font-size:clamp(1.1rem,3vw,1.85rem);line-height:1.65;font-weight:750}
+.cover-page{position:relative;overflow:hidden}.cover-image,.page-image{width:100%;height:100%;object-fit:cover;border-radius:24px;display:block}.cover-overlay{
+  position:absolute;
+  left:24px;
+  right:24px;
+  bottom:24px;
+  padding:12px 16px;
+  background:rgba(255,255,255,.72);
+  backdrop-filter:blur(10px);
+  border-radius:18px;
+  text-align:center;
+}
+
+.cover-text{
+  font-size:clamp(1rem,2.1vw,1.35rem);
+  line-height:1.45;
+  font-weight:800;
+}
+
+.story-page{
+  position:relative;
+  display:block;
+  padding:clamp(18px,4vw,30px);
+}
+
+.image-wrap{
+  width:100%;
+  height:100%;
+}
+
+.text-area{
+  position:absolute;
+  left:24px;
+  right:24px;
+  bottom:24px;
+  padding:10px 14px;
+  border-radius:18px;
+  background:rgba(255,255,255,.74);
+  backdrop-filter:blur(10px);
+}
+
+.text-area p{
+  margin:0;
+  text-align:center;
+  font-size:clamp(1rem,2.2vw,1.35rem);
+  line-height:1.45;
+  font-weight:750;
+}
 .controls{width:min(94vw,680px,calc((100svh - 112px)*var(--ratio)));display:grid;grid-template-columns:minmax(92px,1fr) auto minmax(92px,1fr);gap:12px;align-items:center}.controls button{min-height:48px;border:0;border-radius:999px;padding:11px 18px;background:linear-gradient(135deg,var(--pink),var(--purple));color:white;cursor:pointer;font-weight:900;box-shadow:0 10px 24px rgba(85,37,138,.24)}.controls button:disabled{opacity:.38;cursor:not-allowed;box-shadow:none}.indicator{display:grid;justify-items:center;gap:6px;min-width:86px}#counter{font-size:.88rem;font-weight:900;color:#55258a;background:rgba(255,255,255,.78);padding:4px 10px;border-radius:999px}.dots{display:flex;gap:7px;align-items:center;justify-content:center}.dot{width:8px;height:8px;border:0;border-radius:999px;padding:0;background:rgba(85,37,138,.24)}.dot.is-active{background:var(--purple);transform:scale(1.22)}
 @media(max-width:720px){.book,.controls{width:min(96vw,calc((100svh - 96px)*var(--ratio)))}}
 @media(max-width:420px){.app{padding:8px}.page{border-radius:22px}.book,.controls{width:min(97vw,calc((100svh - 90px)*var(--ratio)))}.controls button{min-height:44px;padding:9px 12px}.cover-overlay{inset:auto 14px 14px 14px;padding:14px}}
