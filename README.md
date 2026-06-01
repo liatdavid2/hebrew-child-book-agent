@@ -14,7 +14,8 @@ UI בעברית + FastAPI + LangGraph + OpenAI.
 4. בונה ספר HTML מדפדף
 5. יוצר ZIP מוכן ל-GitHub Pages
 
-<img width="1917" height="970" alt="image" src="https://github.com/user-attachments/assets/c320dc8f-954f-4c67-be7f-04ea61a33cf8" />
+<img width="1918" height="965" alt="image" src="https://github.com/user-attachments/assets/35597c58-8b81-4688-a346-539c8291228a" />
+
 <img width="1919" height="968" alt="image" src="https://github.com/user-attachments/assets/8c50fdc9-988e-49a0-803a-5487554866d5" />
 
 <img width="1919" height="965" alt="image" src="https://github.com/user-attachments/assets/2caffe8d-0738-4282-a1dd-1809543ead43" />
