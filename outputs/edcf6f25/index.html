@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>מסע בעולם הממתקים</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="book-shell">
+      <div class="book" id="book">
+        <article class="page is-active">
+          <section class="cover-page">
+            <img class="cover-image" src="assets/cover.png" alt="שער הספר" />
+            <div class="cover-overlay">
+              <div class="cover-text">מַסַּע בָּעוֹלָם הַמַּמְתַּקִּים</div>
+            </div>
+          </section>
+        </article>
+        
+            <article class="page">
+              <section class="story-page">
+                <div class="image-wrap">
+                  <img class="page-image" src="assets/page-1.png" alt="איור לעמוד 1" />
+                </div>
+                <div class="text-area">
+                  <p>גַּלִּי הֲלְכָה לְעוֹלָם הַמַּמְתַּקִּים. הִיא רָאֲתָה מֵרְשְׁמְלוֹ רַךְ, שׁוֹקוֹלָד מָתוֹק, וְסוּכָּרִיּוֹת עַל מַקֵּל עֲנָקִיּוֹת וְצִבְעוֹנִיּוֹת.</p>
+                </div>
+              </section>
+            </article>
+            </div>
+      <nav class="controls" aria-label="דפדוף">
+        <button id="nextBtn" type="button">הבא</button>
+        <div class="indicator">
+          <span id="counter">שער</span>
+          <div class="dots" id="dots"></div>
+        </div>
+        <button id="prevBtn" type="button">הקודם</button>
+      </nav>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

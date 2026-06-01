@@ -4,3 +4,4 @@ python-dotenv==1.0.1
 openai>=1.61.0
 langgraph==0.2.74
 pydantic==2.10.6
+nakdimon

@@ -10,6 +10,7 @@ from app.agents.book_agent import generate_book
 from app.agents.image_agent import generate_book_images
 from app.exporter import build_book_site
 from app.models import BookRequest
+from app.agents.nikud_agent import add_nikud_to_book
 
 load_dotenv()
 
@@ -32,6 +33,8 @@ def generate_book_api(request: BookRequest):
     try:
         payload = request.model_dump()
         book = generate_book(payload)
+        print("1.5. Adding Hebrew niqqud...")
+        book = add_nikud_to_book(book)
 
         book_id = str(uuid.uuid4())[:8]
         output_dir = OUTPUTS_DIR / book_id

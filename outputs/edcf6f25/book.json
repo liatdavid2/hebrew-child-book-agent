@@ -1,0 +1,20 @@
+{
+  "title": "מסע בעולם הממתקים",
+  "subtitle": "הרפתקה מתוקה של גלי",
+  "cover_text": "מַסַּע בָּעוֹלָם הַמַּמְתַּקִּים",
+  "age_range": "4-7",
+  "style": "חם, פשוט, דמיוני, לא מפחיד",
+  "cover_image_prompt_hebrew": "ילדה שמחה עומדת בתוך עולם צבעוני מלא בממתקים ענקיים: מרשמלו, שוקולד, וסוכריות על מקל",
+  "cover_image_prompt_english": "A happy girl standing inside a colorful world full of giant sweets: marshmallows, chocolate, and lollipops",
+  "pages": [
+    {
+      "page_number": 1,
+      "original_text": "גלי הלכה לעולם הממתקים וראתה מרשמלו , ושוקולד וסוכריות על מקל ענקיות",
+      "final_text": "גַּלִּי הֲלְכָה לְעוֹלָם הַמַּמְתַּקִּים. הִיא רָאֲתָה מֵרְשְׁמְלוֹ רַךְ, שׁוֹקוֹלָד מָתוֹק, וְסוּכָּרִיּוֹת עַל מַקֵּל עֲנָקִיּוֹת וְצִבְעוֹנִיּוֹת.",
+      "image_prompt_hebrew": "ילדה בשם גלי הולכת בעולם מלא בממתקים גדולים: מרשמלו לבן, שוקולד חום, וסוכריות על מקל צבעוניות ענקיות",
+      "image_prompt_english": "A girl named Gali walking in a world full of large sweets: white marshmallows, brown chocolate, and giant colorful lollipops",
+      "image": "assets/page-1.png"
+    }
+  ],
+  "cover_image": "assets/cover.png"
+}
