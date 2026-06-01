@@ -1,0 +1,20 @@
+{
+  "title": "מסע בעולם הממתקים",
+  "subtitle": "הרפתקה מתוקה של גלי",
+  "cover_text": "מַסַּע בָּעוֹלָם הַמַּמְתַּקִּים",
+  "age_range": "4-7",
+  "style": "חם, פשוט, דמיוני, ידידותי לילדים",
+  "cover_image_prompt_hebrew": "עולם קסום מלא ממתקים צבעוניים, שוקולדים, סוכריות על מקל, נוף שמימי עם עננים מתוקים וצבעים בהירים",
+  "cover_image_prompt_english": "A magical world full of colorful sweets, chocolates, lollipops, a dreamy landscape with fluffy candy clouds and bright colors",
+  "pages": [
+    {
+      "page_number": 1,
+      "original_text": "גלי טיילה לעולם הממתקים שם ראתה ילדה שוקולד וילדה סוכריה על מקל",
+      "final_text": "גַּלִּי טִיְילָה בְּאֶרֶץ הַמַּמְתַּקִּים. הִיא פָּגְשָׁה יַלְדָּה עֲשׂוּיָה שׁוֹקוֹלָד וְיַלְדָּה עִם סוּכָּרְיָּה עַל מַקֵּל.",
+      "image_prompt_hebrew": "ילדה שמחה מטיילת בארץ ממתקים, ליד שתי בנות – אחת עשויה שוקולד, והשנייה עם סוכריה על מקל צבעונית",
+      "image_prompt_english": "A happy girl walking in a candy land, next to two girls – one made of chocolate, the other holding a colorful lollipop",
+      "image": "assets/page-1.png"
+    }
+  ],
+  "cover_image": "assets/cover.png"
+}
