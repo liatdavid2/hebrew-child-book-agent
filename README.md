@@ -1,17 +1,18 @@
-# Hebrew Child Book Agent UI
+# Hebrew Book Agent With Images
 
-AI Agent עם UI להכנת ספר ילדים בעברית.
+UI בעברית + FastAPI + LangGraph + OpenAI.
 
-כולל:
-- UI בעברית
-- FastAPI backend
-- LangGraph workflow
-- OpenAI GPT API דרך קובץ `.env`
-- קלט לשער + כמה עמודים שרוצים
-- הוראות חופשיות בעברית
-- יצירת ספר JSON
-- תצוגה מקדימה
-- הורדת ZIP של ספר סטטי ל-GitHub Pages
+הפרויקט מקבל:
+- מלל שער
+- כמה עמודים שרוצים
+- הוראות בעברית ל-GPT
+
+ואז:
+1. יוצר ספר ילדים בעברית
+2. יוצר תמונת שער
+3. יוצר תמונה לכל עמוד
+4. בונה ספר HTML מדפדף
+5. יוצר ZIP מוכן ל-GitHub Pages
 
 ## התקנה
 
@@ -22,7 +23,7 @@ python -m venv .venv
 Windows:
 
 ```bash
-.venv\Scripts\activate
+.venv\Scriptsctivate
 ```
 
 Mac/Linux:
@@ -35,13 +36,15 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## הגדרת API Key
+## הגדרת API key
 
-פתחי את `.env` ושימי:
+בקובץ `.env`:
 
 ```env
 OPENAI_API_KEY=sk-your-key-here
 OPENAI_MODEL=gpt-4.1-mini
+OPENAI_IMAGE_MODEL=gpt-image-1
+OPENAI_IMAGE_SIZE=1024x1024
 ```
 
 ## הרצה
@@ -50,12 +53,31 @@ OPENAI_MODEL=gpt-4.1-mini
 uvicorn app.main:app --reload
 ```
 
-פתחי:
+ולפתוח:
 
 ```text
 http://127.0.0.1:8000
 ```
 
+## מה קורה בלחיצה על יצירת ספר
+
+- Agent 1: משפר את טקסט הספר
+- Agent 2: מייצר Prompt לתמונת שער
+- Agent 3: מייצר Prompt לכל עמוד
+- Image Agent: יוצר PNG אמיתי לכל דף
+- Export Agent: בונה HTML/CSS/JS + assets + ZIP
+
+## מה ה-ZIP שנוצר מכיל
+
+- `index.html`
+- `style.css`
+- `script.js`
+- `book.json`
+- `assets/cover.png`
+- `assets/page-1.png`
+- `assets/page-2.png`
+- וכו'
+
 ## הערה
 
-לא שמים OpenAI API key ב-JavaScript. הטוקן נשאר רק בצד שרת בקובץ `.env`.
+בגרסה הזו ה-Key נשאר רק בשרת בתוך `.env`.

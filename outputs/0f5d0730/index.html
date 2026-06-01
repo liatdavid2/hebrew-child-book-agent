@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ילדה חצי גלידה</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="book-shell">
+      <div class="book" id="book">
+        <article class="page is-active">
+          <section class="cover-page">
+            <img class="cover-image" src="assets/cover.png" alt="שער הספר" />
+            <div class="cover-overlay">
+              <div class="badge">שער</div>
+              <h1>ילדה חצי גלידה</h1>
+              <p class="subtitle">הרפתקה מתוקה בבריכה</p>
+              <div class="cover-text">ילדה חצי גלידה</div>
+            </div>
+          </section>
+        </article>
+        
+            <article class="page">
+              <section class="story-page">
+                <div class="image-wrap">
+                  <img class="page-image" src="assets/page-1.png" alt="איור לעמוד 1" />
+                </div>
+                <div class="text-area">
+                  <div class="badge">עמוד 1</div>
+                  <p>ילדה חצי גלידה הלכה לשחות בבריכה הקטנה.</p>
+                </div>
+              </section>
+            </article>
+            </div>
+      <nav class="controls" aria-label="דפדוף">
+        <button id="nextBtn" type="button">הבא</button>
+        <div class="indicator">
+          <span id="counter">שער</span>
+          <div class="dots" id="dots"></div>
+        </div>
+        <button id="prevBtn" type="button">הקודם</button>
+      </nav>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

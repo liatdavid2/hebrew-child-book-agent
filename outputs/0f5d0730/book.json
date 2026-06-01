@@ -1,0 +1,20 @@
+{
+  "title": "ילדה חצי גלידה",
+  "subtitle": "הרפתקה מתוקה בבריכה",
+  "cover_text": "ילדה חצי גלידה",
+  "age_range": "4-7",
+  "style": "חם, פשוט, דמיוני, לא מפחיד",
+  "cover_image_prompt_hebrew": "ילדה חצי גלידה עם שיער צבעוני כמו גלידה, מחייכת, עומדת ליד בריכת מים צבעונית, אווירה שמחה וקיצית",
+  "cover_image_prompt_english": "A half-ice-cream girl with colorful ice-cream hair, smiling, standing next to a colorful pool, cheerful summer atmosphere",
+  "pages": [
+    {
+      "page_number": 1,
+      "original_text": "ילדה חצי גלידה הלכה לבריכה.",
+      "final_text": "ילדה חצי גלידה הלכה לשחות בבריכה הקטנה.",
+      "image_prompt_hebrew": "ילדה חצי גלידה עם גוף של גלידה צבעונית, הולכת בדרכה לבריכה כחולה וקטנה, שמיים בהירים ושמש נעימה",
+      "image_prompt_english": "Half-ice-cream girl with a colorful ice-cream body, walking on her way to a small blue pool, bright sky and gentle sun",
+      "image": "assets/page-1.png"
+    }
+  ],
+  "cover_image": "assets/cover.png"
+}

@@ -1,5 +1,5 @@
+/.venv
 .env
 .env.example
-/.venv
 /app/__pycache__
-outputs/.gitkeep
+/app/agents/__pycache__
