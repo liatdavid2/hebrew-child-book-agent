@@ -1,0 +1,20 @@
+{
+  "title": "ילדת ברבי ושחייה עם הדולפינים",
+  "subtitle": "הרפתקה קסומה במעמקי הים",
+  "cover_text": "ילדת ברבי שוחה עם דולפינים",
+  "age_range": "4-7",
+  "style": "חם, פשוט, דמיוני, ידידותי לילדים",
+  "cover_image_prompt_hebrew": "ילדת ברבי מחייכת שוחה עם דולפינים כחולים ויפים, ים כחול בהיר, אווירה שמחה וצבעונית",
+  "cover_image_prompt_english": "Barbie girl smiling swimming with beautiful blue dolphins, bright blue sea, cheerful and colorful atmosphere",
+  "pages": [
+    {
+      "page_number": 1,
+      "original_text": "ילדת ברבי שוחה עם דולפינים ורואה כמה דולפינים תינוקות",
+      "final_text": "ילדת ברבי שוחה בשמחה עם הדולפינים. היא רואה גם דולפינים קטנים ותינוקות שמחים לידם.",
+      "image_prompt_hebrew": "ילדת ברבי שוחה עם דולפינים גדולים וקטנים, דולפינים תינוקות משחקים ליד, ים כחול, אווירה קסומה וידידותית",
+      "image_prompt_english": "Barbie girl swimming happily with big and small dolphins, baby dolphins playing nearby, blue sea, magical and friendly atmosphere",
+      "image": "assets/page-1.png"
+    }
+  ],
+  "cover_image": "assets/cover.png"
+}
