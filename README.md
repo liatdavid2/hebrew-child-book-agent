@@ -14,6 +14,10 @@ The application receives user input in Hebrew, including:
 - Story style, topic, characters, and additional creative guidance
 
 Based on this input, the system automatically generates a complete Hebrew children's book.
+<img width="1919" height="969" alt="image" src="https://github.com/user-attachments/assets/b603cf59-fb41-4a32-9f8f-44a05d867583" />
+<img width="1914" height="865" alt="image" src="https://github.com/user-attachments/assets/6eb90086-34a1-428b-9e0b-1549260e7ad7" />
+<img width="1909" height="1017" alt="image" src="https://github.com/user-attachments/assets/29fa39b1-ab96-48a9-bef6-a66ebf0ffe60" />
+
 
 ## Main features
 
