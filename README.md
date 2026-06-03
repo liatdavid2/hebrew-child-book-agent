@@ -2,7 +2,7 @@
 
 A full-stack AI project for generating personalized Hebrew children's books.
 
-The system includes a Hebrew user interface, a FastAPI backend, a LangGraph-based generation workflow, OpenAI models for text and image generation, and Nakdimon for automatic Hebrew Nikud.
+The system includes a Hebrew user interface, a FastAPI backend, a LangGraph-based generation workflow, OpenAI models for text and image generation, and **Nakdimon for automatic Hebrew Nikud**.
 
 ## What the project does
 
