@@ -1,0 +1,20 @@
+{
+  "title": "מסע בעולם הממתקים",
+  "subtitle": "הרפתקה מתוקה ומופלאה",
+  "cover_text": "מַסַּע בָּעוֹלָם הַמַּמְתַּקִּים",
+  "age_range": "4-7",
+  "style": "סגנון עתידני תלת מימד",
+  "cover_image_prompt_hebrew": "עולם עתידני תלת מימדי של ארץ ממתקים צבעונית עם דמויות ילדה שוקולד וילדה סוכריה על מקל",
+  "cover_image_prompt_english": "Futuristic 3D world of a colorful candy land with characters of a chocolate girl and a lollipop girl",
+  "pages": [
+    {
+      "page_number": 1,
+      "original_text": "גלי טיילה לעולם הממתקים שם ראתה ילדה שוקולד וילדה סוכריה על מקל",
+      "final_text": "גַּלִּי טִיְילָה בְּאֶרֶץ הַמַּמְתַּקִּים. שָׁם פָּגְשָׁה יַלְדָּה שׁוֹקוֹלָד וְיַלְדָּה סוּכָּרִיָּה עַל מַקֵּל.",
+      "image_prompt_hebrew": "ילדה גלי בעולם ממתקים תלת מימדי, פוגשת ילדה משוקולד וילדה סוכריה על מקל, רקע צבעוני וחלומי",
+      "image_prompt_english": "Girl Gali in a futuristic 3D candy world, meeting a chocolate girl and a lollipop girl, colorful dreamy background",
+      "image": "assets/page-1.png"
+    }
+  ],
+  "cover_image": "assets/cover.png"
+}
