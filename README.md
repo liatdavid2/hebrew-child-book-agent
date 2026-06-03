@@ -12,8 +12,16 @@ The application receives user input in Hebrew, including:
 - Number of pages
 - Hebrew instructions for GPT
 - Story style, topic, characters, and additional creative guidance
+- Automatic Hebrew Nikud generation using Nakdimon
 
-Based on this input, the system automatically generates a complete Hebrew children's book.
+Based on this input, the system automatically generates:
+
+- A complete Hebrew children's story
+- Hebrew text enriched with Nikud for easier reading
+- A cover image
+- A unique image for each page
+- An interactive flipping HTML book
+- A ZIP file ready for GitHub Pages deployment
 
 <img width="1919" height="969" alt="image" src="https://github.com/user-attachments/assets/b603cf59-fb41-4a32-9f8f-44a05d867583" />
 <img width="1914" height="865" alt="image" src="https://github.com/user-attachments/assets/6eb90086-34a1-428b-9e0b-1549260e7ad7" />
