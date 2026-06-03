@@ -14,11 +14,12 @@ UI בעברית + FastAPI + LangGraph + OpenAI.
 4. בונה ספר HTML מדפדף
 5. יוצר ZIP מוכן ל-GitHub Pages
 
-<img width="1918" height="965" alt="image" src="https://github.com/user-attachments/assets/35597c58-8b81-4688-a346-539c8291228a" />
+<img width="1919" height="969" alt="image" src="https://github.com/user-attachments/assets/b603cf59-fb41-4a32-9f8f-44a05d867583" />
 
-<img width="1919" height="968" alt="image" src="https://github.com/user-attachments/assets/8c50fdc9-988e-49a0-803a-5487554866d5" />
+<img width="1914" height="865" alt="image" src="https://github.com/user-attachments/assets/6eb90086-34a1-428b-9e0b-1549260e7ad7" />
 
-<img width="1919" height="965" alt="image" src="https://github.com/user-attachments/assets/2caffe8d-0738-4282-a1dd-1809543ead43" />
+<img width="1919" height="966" alt="image" src="https://github.com/user-attachments/assets/81b5387f-bd9b-4590-aa6b-7ff0288cd864" />
+
 
 
 ## התקנה
@@ -71,11 +72,10 @@ http://127.0.0.1:8000
 - Agent 1: משפר את טקסט הספר
 - Agent 2: מייצר Prompt לתמונת שער
 - Agent 3: מייצר Prompt לכל עמוד
-- Image Agent: יוצר PNG אמיתי לכל דף
+- Image Agent: יוצר PNG 
+אמיתי לכל דף
 - Export Agent: בונה HTML/CSS/JS + assets + ZIP
-
-## מה ה-ZIP שנוצר מכיל
-
+## מה ה-ZIP שנוצר מכי
 - `index.html`
 - `style.css`
 - `script.js`
