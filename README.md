@@ -1,90 +1,69 @@
-# Hebrew Book Agent With Images
+# Hebrew Children's Book Generator
 
-UI בעברית + FastAPI + LangGraph + OpenAI.
+A full-stack AI project for generating personalized Hebrew children's books.
 
-הפרויקט מקבל:
-- מלל שער
-- כמה עמודים שרוצים
-- הוראות בעברית ל-GPT
+The system includes a Hebrew user interface, a FastAPI backend, a LangGraph-based generation workflow, and OpenAI models for text and image generation.
 
-ואז:
-1. יוצר ספר ילדים בעברית
-2. יוצר תמונת שער
-3. יוצר תמונה לכל עמוד
-4. בונה ספר HTML מדפדף
-5. יוצר ZIP מוכן ל-GitHub Pages
+## What the project does
 
-<img width="1919" height="969" alt="image" src="https://github.com/user-attachments/assets/b603cf59-fb41-4a32-9f8f-44a05d867583" />
+The application receives user input in Hebrew, including:
 
-<img width="1914" height="865" alt="image" src="https://github.com/user-attachments/assets/6eb90086-34a1-428b-9e0b-1549260e7ad7" />
+- Cover text
+- Number of pages
+- Hebrew instructions for GPT
+- Story style, topic, characters, and additional creative guidance
 
-<img width="1919" height="966" alt="image" src="https://github.com/user-attachments/assets/81b5387f-bd9b-4590-aa6b-7ff0288cd864" />
+Based on this input, the system automatically generates a complete Hebrew children's book.
 
+## Main features
 
+- Generates a Hebrew children's story
+- Creates a cover image
+- Creates a unique image for each page
+- Builds an interactive flipping HTML book
+- Exports the final result as a ZIP file
+- The ZIP is ready to upload directly to GitHub Pages
 
-## התקנה
+## Tech stack
 
-```bash
-python -m venv .venv
-```
+- Hebrew UI
+- FastAPI backend
+- LangGraph workflow
+- OpenAI API
+- HTML, CSS, and JavaScript
+- ZIP export for static hosting
 
-Windows:
+## Generation flow
 
-```bash
-.venv\Scriptsctivate
-```
+1. The user enters the book instructions in Hebrew.
+2. The backend sends the request to a LangGraph workflow.
+3. The workflow generates the story structure and page content.
+4. OpenAI is used to generate the Hebrew text and images.
+5. The system creates an HTML flipping book.
+6. All generated files are packaged into a ZIP.
+7. The ZIP can be deployed as a static website using GitHub Pages.
 
-Mac/Linux:
+## Output
 
-```bash
-source .venv/bin/activate
-```
+Each generated book includes:
 
-```bash
-pip install -r requirements.txt
-```
-
-## הגדרת API key
-
-בקובץ `.env`:
-
-```env
-OPENAI_API_KEY=sk-your-key-here
-OPENAI_MODEL=gpt-4.1-mini
-OPENAI_IMAGE_MODEL=gpt-image-1
-OPENAI_IMAGE_SIZE=1024x1024
-```
-
-## הרצה
-
-```bash
-uvicorn app.main:app --reload
-```
-
-ולפתוח:
-
-```text
-http://127.0.0.1:8000
-```
-
-## מה קורה בלחיצה על יצירת ספר
-
-- Agent 1: משפר את טקסט הספר
-- Agent 2: מייצר Prompt לתמונת שער
-- Agent 3: מייצר Prompt לכל עמוד
-- Image Agent: יוצר PNG 
-אמיתי לכל דף
-- Export Agent: בונה HTML/CSS/JS + assets + ZIP
-## מה ה-ZIP שנוצר מכי
 - `index.html`
-- `style.css`
-- `script.js`
-- `book.json`
-- `assets/cover.png`
-- `assets/page-1.png`
-- `assets/page-2.png`
-- וכו'
+- CSS and JavaScript files
+- Cover image
+- Page images
+- Hebrew story content
+- Static assets required for GitHub Pages
 
-## הערה
+## GitHub Pages usage
 
-בגרסה הזו ה-Key נשאר רק בשרת בתוך `.env`.
+After generating the ZIP file:
+
+1. Extract the ZIP.
+2. Upload the extracted files to a GitHub repository.
+3. Enable GitHub Pages in the repository settings.
+4. Open the generated GitHub Pages URL to view the book online.
+
+## Example use case
+
+A parent can enter a short idea in Hebrew, such as a story about a unicorn, a birthday party, or best friends at the beach.  
+The system turns the idea into a complete illustrated Hebrew children's book that can be shared online.
