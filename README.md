@@ -4,6 +4,10 @@ A full-stack AI project for generating personalized Hebrew children's books.
 
 The system includes a Hebrew user interface, a FastAPI backend, a LangGraph-based generation workflow, OpenAI models for text and image generation, and **Nakdimon for automatic Hebrew Nikud**.
 
+<img width="1919" height="969" alt="image" src="https://github.com/user-attachments/assets/b603cf59-fb41-4a32-9f8f-44a05d867583" />
+<img width="1914" height="865" alt="image" src="https://github.com/user-attachments/assets/6eb90086-34a1-428b-9e0b-1549260e7ad7" />
+<img width="1909" height="1017" alt="image" src="https://github.com/user-attachments/assets/29fa39b1-ab96-48a9-bef6-a66ebf0ffe60" />
+
 ## What the project does
 
 The application receives user input in Hebrew, including:
@@ -22,10 +26,6 @@ Based on this input, the system automatically generates:
 - A unique image for each page
 - An interactive flipping HTML book
 - A ZIP file ready for GitHub Pages deployment
-
-<img width="1919" height="969" alt="image" src="https://github.com/user-attachments/assets/b603cf59-fb41-4a32-9f8f-44a05d867583" />
-<img width="1914" height="865" alt="image" src="https://github.com/user-attachments/assets/6eb90086-34a1-428b-9e0b-1549260e7ad7" />
-<img width="1909" height="1017" alt="image" src="https://github.com/user-attachments/assets/29fa39b1-ab96-48a9-bef6-a66ebf0ffe60" />
 
 ## Main features
 
